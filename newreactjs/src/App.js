@@ -1,22 +1,14 @@
-import logo from "./logo.svg";
-
+// import Count from "./count";
+import Header from "./Layout/header";
+import Main from "./Layout/main";
+import Footer from "./Layout/footer";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <header className="App-header"></header>
+      <Main />
+      <Footer />
     </div>
   );
 }
