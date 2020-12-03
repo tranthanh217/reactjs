@@ -10,11 +10,7 @@ function SelectStore() {
           <option>st1</option>
         </select>
         <div className="addNewStrore">
-          <div
-            className="addStore btn "
-            data-toggle="modal"
-            data-target="#addStoreModal"
-          >
+          <div className="addStore btn " onClick={clickhandle}>
             <i className="fa fa-database" aria-hidden="true"></i> Add New Store
           </div>
         </div>
