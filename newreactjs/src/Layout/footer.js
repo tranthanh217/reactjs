@@ -28,52 +28,6 @@ function Footer() {
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div className="modal-body">
-                <div className="domain">
-                  <input
-                    type="text"
-                    name="domain"
-                    className="form-control mb-3"
-                    placeholder="https://example.com"
-                  />
-                </div>
-                <div className="host">
-                  <input
-                    type="text"
-                    name="host"
-                    className="form-control mb-3"
-                    placeholder="host"
-                  />
-                </div>
-                <div className="userdb">
-                  <input
-                    type="text"
-                    name="userdb"
-                    className="form-control mb-3"
-                    placeholder="database user"
-                  />
-                </div>
-                <div className="password">
-                  <input
-                    type="text"
-                    name="passworddb"
-                    className="form-control mb-3"
-                    placeholder="password"
-                  />
-                </div>
-                <div className="dbname">
-                  <input
-                    type="text"
-                    name="dbname"
-                    className="form-control mb-3"
-                    placeholder="database name"
-                  />
-                </div>
-                <div className="spinner-border ml-2" role="status">
-                  <span className="sr-only">Loading...</span>
-                </div>
-              </div>
-
               <div className="modal-footer">
                 <button
                   type="button"

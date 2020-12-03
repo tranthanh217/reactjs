@@ -1,4 +1,3 @@
-// import Count from "./count";
 import Header from "./Layout/header";
 import Main from "./Layout/main";
 import Footer from "./Layout/footer";
