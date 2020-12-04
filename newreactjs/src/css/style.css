@@ -125,3 +125,13 @@ button.close.closeForm:focus {
 .clearHistory:hover {
   color: #007bff;
 }
+
+.remove-action:before {
+  content: "\f056";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

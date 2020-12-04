@@ -2,17 +2,24 @@ import React, { useState, useEffect } from "react";
 import FormDetail from "./formDetail";
 
 function FormAction() {
-  const [numRow,setNumRow] = useState(1);
+  const [numRow,setNumRow] = useState([0]);
+  const [count, setCount] = useState(1);
 
   const handleAddSecondInput = () =>{
-    setNumRow(numRow + 1);
+    setCount(count + 1);
+    setNumRow([...numRow, count]);
+  };
+  const handleRemove = (e) => {
+    
+console.log(numRow.slice(numRow.indexOf(e, 1)));
+    // setNumRow(newList);
+    setCount(count - 1);
+    
   };
   return (
     <div className="col-md-8">
       <div id="formHtml" className="input-form p-3 border rounded-top">
-       
-        <FormDetail rowNum={numRow} />
-       
+        <FormDetail rowNum={numRow} removehandle={handleRemove} />
       </div>
       <div className="addRow border-top-0 border rounded-bottom">
         <div className="addRow-btn btn btn-secondary" onClick={handleAddSecondInput}>Add Row</div>
